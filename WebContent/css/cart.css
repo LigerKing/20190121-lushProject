@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Noto Sans KR", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 11pt;
+	font-weight: 300;
+	color: #333;
+	letter-spacing: -0.5px;
+	line-height: 1.4;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: #000;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #999;
+}
+
+strong
+{
+}
+
+em
+{
+	font-style: normal;
+}
+
+a
+{
+	color: #2C383B;
+	text-decoration: none;
+}
+
+.container /* 전체영역 */
+{
+	margin: 0px auto;
+	width: 1200px;
+}
+
+table, th, td
+{
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	border: 0;
+	border-collapse: collapse;
+	vertical-align: middle;
+}
+
+button
+{
+	cursor: pointer;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+/*********************************************************************************/
+/* 상단영역		                                                                   */
+/*********************************************************************************/
+
+.top
+{
+	overflow: hidden;
+	padding: 80px 0 90px;
+	text-align: center;
+}
+
+.top h1
+{
+	color: #000;
+	font-size: 42px;
+	font-weight: 800;
+}
+
+/* 현재 페이지 안내 */
+.top div
+{
+	padding: 30px 0 0;
+}
+
+.top div span
+{
+	font-size: 16px;
+	color: #a9a9a9;
+}
+
+.top div span em
+{
+	margin: 0 6px 0 6px;
+	padding: 0 13px 0 13px;
+	font-weight: 800;
+}
+
+.top div span em.this
+{
+	color: #333;
+}
+
+/*********************************************************************************/
+/* 중앙 영역		                                                             */
+/*********************************************************************************/
+
+.middle
+{
+	overflow: hidden;
+}
+
+.middle #middle-title
+{
+	float: left;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #000;
+}
+
+.middle #middle-title h2
+{
+	color: #000;
+	font-size: 28px;
+	font-weight: 800;
+	padding: 0 0 15px 0;
+}
+
+/***** 장바구니 *****/
+
+table
+{
+	width: 100%;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+table > thead > tr > th
+{
+	padding: 15px 0;
+	border-bottom: 1px solid #e7e7e7;
+	font-weight: 600;
+	color: #8f8f8f;
+}
+
+table > tbody > tr > td
+{
+	height: auto;
+	padding: 20px 15px;
+	white-space: nowrap;
+}
+.ta-t
+{
+	display: table;
+	float: left;
+}
+
+.ta-t > span
+{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+}
+
+.ta-t #cate
+{
+	color: #8f8f8f;
+	font-size: 16px;
+}
+
+.ta-c
+{
+	text-align: center;
+	font-weight: 600;
+	font-size: 15px;
+	color: #333;
+}
+
+.deli-c
+{
+	font-weight: 500;
+	color: #8f8f8f;
+}
+
+input.checkbox
+{
+	width: 15px;
+	height: 15px;
+}
+
+/*********************************************************************************/
+/* 수량 카운트	                                                                  */
+/*********************************************************************************/
+
+/* 수량조절버튼 */
+.price
+{
+	padding: 0px auto;
+}
+
+.price button
+{
+	border: none;
+	outline: none;
+	background-color: white;
+	width: 30px;
+	height: 40px;
+	cursor: pointer;
+}
+
+input
+{
+	border: none;
+	outline: none;
+	width: 50px;
+	height: 40px;
+	text-align: center;
+}
+
+span.count
+{
+	border: 1px solid #e7e7e7;
+	display: inline-block;
+	line-height: 1.4;
+	font-weight: 700;
+	font-size: 18px;
+	padding: 0;
+}
+
+/*********************************************************************************/
+/* 총 주문금액		                                                                  */
+/*********************************************************************************/
+
+.price-box
+{
+	display: table;
+	width: 100%;
+	margin: 0;
+	background: #f2f2f2;
+	border: 0;
+}
+
+.price-box > div
+{
+	display: table-cell;
+	padding: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.price-box > div p
+{
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	padding-top: 15px;
+}
+
+.price-box > div p > span
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.price-box > div p .tit
+{
+	padding: 0 10px;
+}
+
+.tit
+{
+	overflow: hidden;
+	padding: 33px 0 16px;
+}
+
+.total, #total-price
+{
+	font-weight: 800;
+}
+
+/*********************************************************************************/
+/* 삭제하기		                                                                  */
+/*********************************************************************************/
+
+.del
+{
+	margin-top: 20px;
+}
+
+#cart-delete
+{
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	box-sizing: border-box;	
+	border-bottom: 1px solid #8f8f8f;
+	margin: 0 5px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #000;
+}
+
+/*********************************************************************************/
+/* 쇼핑계속하기, 주문하기		                                                         */
+/*********************************************************************************/
+
+.shop-button 
+{
+	margin-top: 50px;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.shop-button > button
+{
+	text-align: center;
+	
+	margin: 0 10px;
+	width: 280px;
+	height: 63px;
+	line-height: 60px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+#turn-back
+{
+	border: 1px solid #000;
+	background: #fff;
+	color: #000;
+}
+
+#order
+{
+	border: 1px solid #000;
+	background: #000;
+	color: #fff;
+}

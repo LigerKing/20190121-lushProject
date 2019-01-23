@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Noto Sans KR", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 14pt;
+	font-weight: 300;
+	color: #333;
+	letter-spacing: -0.5px;
+	line-height: 1.4;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: #454445;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #999;
+}
+
+strong
+{
+}
+
+a
+{
+	color: #2C383B;
+	text-decoration: none;
+}
+
+.container
+{
+	margin: 0px auto;
+	width: 1200px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+button
+{
+	outline: none;
+	cursor: pointer;
+}
+
+input
+{
+	outline: none;
+}
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+.title h2
+{
+	font-weight: 600;
+	font-size: 16px;
+	color: #333;
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+	
+#banner-wrapper
+{
+	overflow: hidden;
+}
+
+#banner
+{
+	padding: 90px 0 50px !important;
+	text-align: center;
+}
+
+/* 상단배너 글자 */
+#banner h1 {
+	color: #000;
+	font-size: 42px;
+	font-weight: 900;
+	line-height: 48px;
+}
+
+#banner h5 {
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+#featured-wrapper
+{
+	overflow: hidden;
+	padding-bottom: 100px;
+	background: #FFF;
+	text-align: center;
+}
+
+#featured
+{
+	overflow: hidden;
+}
+
+/* 상단 메뉴명 */
+#featured h1 {
+	text-align: left;
+	color: #333;
+}
+
+#featured .title h2
+{
+	font-size: 20px;
+}
+
+#featured h2
+{
+	text-align: center;
+}
+
+#featured .icon
+{
+	position: relative;
+	display: inline-block;
+	width: 280px;
+	height: 200px;
+	text-align: center;
+	color: #FFF;
+}
+
+.column1,  .column2,  .column3,  .column4
+{
+	width: 282px;
+	margin-bottom: 70px;
+}
+
+.column1,  .column2
+{
+	float: left;
+	margin-right: 24px;
+}
+
+.column3
+{
+	float: left;
+}
+
+.column4
+{
+	float: right;
+}
+
+/*********************************************************************************/
+/* 검색		                                                                      */
+/*********************************************************************************/
+
+.search
+{
+	padding: 26px;
+	border-left: 0;
+	border-right: 0;
+	background: #f8f8f8;
+	width: 1150px;
+	margin: 0px auto;
+}
+
+.search > span
+{
+	font-weight: 500;
+	font-size: 16px;
+	padding: 0 10px;
+}
+
+.search #sr
+{
+	width: 320px;
+	height: 38px;
+	position: relative;
+	padding: 0 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+}
+
+.search .btnicon
+{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	box-sizing: border-box;
+	
+	width: 144px;
+	height: 40px;
+	line-height: 1 !important;
+	margin-left: 10px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	
+	border: 1px solid #000;
+	background: #000;
+	color: #fff;
+}
+
+/* 검색결과 없을때 */
+#list-null
+{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+#list-null > p
+{
+	color: #333;
+}
+
+/* 돌아가기 */
+#return
+{
+	text-align: center;
+}
+
+#return > button
+{
+	width: 144px;
+	height: 40px;
+	line-height: 1 !important;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	
+	border: 1px solid #000;
+	background: #fff;
+	color: #000; 
+}

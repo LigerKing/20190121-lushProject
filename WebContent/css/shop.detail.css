@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Noto Sans KR", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 14pt;
+	font-weight: 300;
+	color: #333;
+	letter-spacing: -0.5px;
+	line-height: 1.4;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 15px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #666;
+}
+
+strong
+{
+}
+
+a
+{
+	color: #2C383B;
+	text-decoration: none;
+}
+
+.container
+{
+	margin: 0px auto;
+	width: 980px;
+	padding-bottom: 100px;
+}
+
+button
+{
+	outline: none;
+	cursor: pointer;
+}
+
+input
+{
+	outline: none;
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+	
+#banner-wrapper
+{
+	overflow: hidden;
+}
+
+#banner
+{
+	padding: 90px 0 50px !important;
+	text-align: center;
+}
+
+/* 상단배너 글자 */
+#banner h1 {
+	color: #000;
+	font-size: 42px;
+	font-weight: 900;
+	line-height: 48px;
+}
+
+#banner h5 {
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+/*********************************************************************************/
+/* 타이틀		                                                                  */
+/*********************************************************************************/
+
+#title
+{
+	padding: 20px 0;
+	border-bottom: 1px solid #000;
+}
+
+#title > h1
+{
+	font-size: 32px;
+	font-weight: 600;
+	color: #000;
+}
+
+/*********************************************************************************/
+/* content	                                                                  */
+/*********************************************************************************/
+
+.content
+{
+	padding: 70px 0;
+}
+
+.content .sub-title
+{
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	padding-top: 30px;
+}
+
+/*********************************************************************************/
+/* 구글맵			                                                                  */
+/*********************************************************************************/
+
+#map {
+	width: 980px;
+	height: 500px;
+	margin: 0px auto;
+}
+
+/* 돌아가기 */
+#return
+{
+	text-align: center;
+}
+
+#return > button
+{
+	width: 144px;
+	height: 40px;
+	line-height: 1 !important;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	
+	border: 1px solid #000;
+	background: #fff;
+	color: #000; 
+}

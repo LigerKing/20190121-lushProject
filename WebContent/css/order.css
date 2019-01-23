@@ -1,0 +1,512 @@
+@charset "UTF-8";
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Noto Sans KR", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 11pt;
+	font-weight: 300;
+	color: #333;
+	letter-spacing: -0.5px;
+	line-height: 1.4;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: #000;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #999;
+}
+
+strong
+{
+}
+
+em
+{
+	font-style: normal;
+}
+
+a
+{
+	color: #2C383B;
+	text-decoration: none;
+}
+
+.container /* 전체영역 */
+{
+	margin: 0px auto;
+	padding-top: 50px;
+	width: 1200px;
+}
+
+table, th, td
+{
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	border: 0;
+	border-collapse: collapse;
+	vertical-align: middle;
+}
+
+button
+{
+	cursor: pointer;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+input
+{
+	outline: none;
+	font-weight: 600;
+	color: #717171;
+}
+
+label
+{
+	cursor: pointer;
+	vertical-align: top;
+}
+
+/*********************************************************************************/
+/* 상단영역		                                                                   */
+/*********************************************************************************/
+
+.top
+{
+	overflow: hidden;
+	padding: 80px 0 90px;
+	text-align: center;
+}
+
+.top h1
+{
+	color: #000;
+	font-size: 42px;
+	font-weight: 800;
+}
+
+/* 현재 페이지 안내 */
+.top div
+{
+	padding: 30px 0 0;
+}
+
+.top div span
+{
+	font-size: 16px;
+	color: #a9a9a9;
+}
+
+.top div span em
+{
+	margin: 0 6px 0 6px;
+	padding: 0 13px 0 13px;
+	font-weight: 800;
+}
+
+.top div span em.this
+{
+	color: #333;
+}
+
+/*********************************************************************************/
+/* 제품		                                                             */
+/*********************************************************************************/
+
+.order-product
+{
+	overflow: hidden;
+}
+
+.order-product #product-title
+{
+	float: left;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #000;
+}
+
+.order-product #product-title h2
+{
+	color: #000;
+	font-size: 28px;
+	font-weight: 800;
+	padding: 0 0 15px 0;
+}
+
+/***** 제품목록 *****/
+
+.order-product table
+{
+	width: 100%;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.order-product table > thead > tr > th
+{
+	padding: 15px 0;
+	border-bottom: 1px solid #e7e7e7;
+	font-weight: 500;
+	color: #8f8f8f;
+}
+
+.order-product table > tbody > tr > td
+{
+	height: auto;
+	padding: 20px 15px;
+	white-space: nowrap;
+}
+.ta-t
+{
+	display: table;
+	float: left;
+}
+
+.ta-t > span
+{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+}
+
+.ta-t #cate
+{
+	color: #8f8f8f;
+	font-size: 16px;
+}
+
+.ta-c
+{
+	text-align: center;
+	font-weight: 600;
+	font-size: 15px;
+	color: #333;
+}
+
+.deli-c
+{
+	font-weight: 500;
+	color: #8f8f8f;
+}
+
+/*********************************************************************************/
+/* 총 주문금액		                                                                  */
+/*********************************************************************************/
+
+.price-box
+{
+	display: table;
+	width: 100%;
+	margin: 0;
+	background: #f2f2f2;
+	border: 0;
+}
+
+.price-box > div
+{
+	display: table-cell;
+	padding: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.price-box > div p
+{
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	padding-top: 15px;
+}
+
+.price-box > div p > span
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.price-box > div p .tit
+{
+	padding: 0 10px;
+}
+
+.tit
+{
+	overflow: hidden;
+	padding: 33px 0 16px;
+}
+
+.total, #total-orderPrice
+{
+	font-weight: 800;
+}
+
+
+/*********************************************************************************/
+/* 입력폼 		                                                             */
+/*********************************************************************************/
+
+.title
+{
+	padding: 0 0 15px 0;
+	margin-top: 90px;
+	color: #000;
+	font-size: 28px;
+	font-weight: 800;
+}
+
+.tables
+{
+	padding: 20px 0;
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.tables > table
+{
+	width: 100%;
+}
+
+.tables > table > tbody > tr > th
+{
+	padding: 10px 0;
+	color: #8f8f8f;
+	font-weight: 600;
+	font-size: 14px;
+	text-indent: 8px;
+	text-align: left;
+}
+
+.tables > table > tbody > tr > td
+{
+	padding: 10px 0;
+}
+
+.txt-field
+{
+	height: 38px;
+	position: relative;
+	padding: 0 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+}
+
+.txt-field .text
+{
+	width: 100%;
+	height: 36px;
+	padding: 0;
+	border: 1px solid #fff;
+	color: #333;
+	line-height: 36px;
+	font-size: 13px;
+}
+
+/*********************************************************************************/
+/* 주문 고객 정보		                                                             */
+/*********************************************************************************/
+
+#order-info
+{
+	overflow: hidden;
+}
+
+/*********************************************************************************/
+/* 배송 정보			                                                             */
+/*********************************************************************************/
+
+.shipping-type .form-element
+{
+	padding-right: 40px;
+	display: inline-block;
+	position: relative;
+}
+
+.form-element input
+{
+	position: absolute;
+	top: 2px;
+	left: 1px;
+	z-index: -1;
+}
+
+input.radio
+{
+	width: 13px;
+	height: 13px;
+	vertical-align: top;
+}
+
+.form-element label.choice-s
+{
+	min-width: 13px;
+	padding: 0 0 0 22px;
+}
+
+.form-element label
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: inline-block;
+	min-height: 20px;
+	color: #333;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/* 우편번호 검색 입력폼 */
+span
+{
+	display: inline-block;
+}
+
+.post-a
+{
+	margin-top: 10px
+}
+
+/*********************************************************************************/
+/* 최종 결제			                                                             */
+/*********************************************************************************/
+
+.final-settlement
+
+{
+	padding: 30px 20px;
+	text-align: center;
+	background: #f2f2f2;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	font-weight: 600;
+}
+
+.final-settlement em
+{
+	padding: 0 15px 0 0;
+	font-weight: bold;
+}
+
+.final-settlement strong
+{
+	font-size: 26px;
+	font-weight: 600;
+}
+
+/* 라디오버튼 */
+
+.shipping-type .form-element2
+{
+	padding-right: 40px;
+	display: inline-block;
+	position: relative;
+}
+
+.form-element2 input
+{
+	position: absolute;
+	top: 2px;
+	left: 1px;
+}
+
+.form-element2 label.choice-s
+{
+	min-width: 13px;
+	padding: 0 0 0 22px;
+}
+
+.form-element2 label
+{
+	top: 0px;
+	left: 0px;
+	display: inline-block;
+	min-height: 20px;
+	color: #333;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/*********************************************************************************/
+/* 버튼				                                                             */
+/*********************************************************************************/
+
+.btn
+{
+	text-align: center;
+	padding: 100px 0;
+}
+
+.btnicon
+{
+	display: inline-block;
+	text-align: center;
+	box-sizing: border-box;
+	font-weight: 600;
+}
+
+.btn_wt
+{
+	border: 1px solid #000;
+	background: #fff;
+	color: #000;
+}
+
+.btn_bk
+{
+	border: 1px solid #000;
+	background: #000;
+	color: #fff;
+}
+
+.post-search
+{
+	width: 120px;
+	vertical-align: middle;
+	margin-left: 7px;
+	height: 40px;
+	line-height: 36px;
+	font-size: 12px;
+}
+
+.pay-btn
+{
+	margin: 0 10px;
+	width: 280px;
+	height: 63px;
+	line-height: 60px;
+	font-size: 15px;
+}
